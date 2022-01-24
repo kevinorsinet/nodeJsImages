@@ -16,3 +16,16 @@ exports.getIndexPage = async (req, res) => {
     res.send(e)
   }
 };
+
+// GET('/ajouterProduit')
+exports.getAddProduct = async (req, res) => {
+
+  
+
+  // console.log(produits);
+  try { // Gestion des exceptions 
+    res.render('ajoutProduit');
+  } catch (e) {
+    res.send(e)
+  }
+};
