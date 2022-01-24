@@ -20,8 +20,18 @@ exports.getIndexPage = async (req, res) => {
 // GET('/ajouterProduit')
 exports.getAddProduct = async (req, res) => {
 
-  
 
+  // console.log(produits);
+  try { // Gestion des exceptions 
+    res.render('ajoutProduit');
+  } catch (e) {
+    res.send(e)
+  }
+};
+
+// POST('/ajouterProduit')
+exports.postAddProduct = async (req, res) => {
+  console.log(req.body)
   // console.log(produits);
   try { // Gestion des exceptions 
     res.render('ajoutProduit');
