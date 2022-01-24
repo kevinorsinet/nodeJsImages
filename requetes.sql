@@ -6,3 +6,4 @@ alt_image Varchar(50)
 );
 
 INSERT INTO produit (nom_produit, url_image_produit, alt_image) VALUES ('Nintendo switch', 'switch.jpg', 'switch');
+SELECT * from produit;
